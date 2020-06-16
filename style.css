@@ -1,0 +1,374 @@
+body {
+    background-color: rgb(254, 228, 254);
+    min-width: 900px;
+    min-height: 800px;
+}
+
+/* links */
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+/* Horizontal Menu */
+
+nav ul {
+    width: 100%;
+    overflow: hidden;
+    list-style-type: none;
+    margin-top: -9px;
+    left: 0;
+    background-color: rgb(46, 21, 31);
+    position: fixed;
+    z-index: 10;
+}
+  
+nav ul li a {
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 18px 40px;
+    text-decoration: none;
+    font-size: 25px;
+    letter-spacing: 0.2em;
+}
+  
+nav ul li a:hover {
+    background-color: rgb(156, 77, 109);
+    text-decoration: none;
+}
+  
+#active {
+    background-color: rgb(207, 153, 195);
+}
+
+/* Picture Carousel Animation */
+
+.pictures {
+    display:none;
+}
+
+.caption {
+    color: whitesmoke;
+    font-weight: bold;
+    display: none;
+    margin-top: -50px;
+    margin-left: 10px;
+}
+
+.citation {
+    color: white;
+    display: none;
+    font-size: 8px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+
+.previous, .next, .curPic {
+    cursor: pointer;
+}
+
+.curPic {
+    height: 10px;
+    width: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: white;
+    margin-right: 10px;
+}
+
+.curPic:hover {
+    background-color: rgb(46, 21, 31);
+}
+
+.firstbutton {
+    margin-left: 300px;
+}
+
+#topPic {
+    background-color: rgb(167, 153, 207);
+    border-radius: 20px 20px 0 0;
+    width: 800px;
+    padding: 25px 0;
+}
+
+#buttonPic {
+    background-color: rgb(167, 153, 207);
+    border-radius: 0 0 20px 20px;
+    width: 800px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: -13px;
+    margin-bottom: 20px;
+}
+
+.previous {
+    margin-left: 10px;
+}
+
+.next {
+    margin-left: 260px;
+}
+
+.previous, .next {
+    opacity: 0.7;
+}
+
+.previous:hover, .next:hover {
+    opacity: 1;
+}
+
+/* main */
+
+main {
+    padding: 200px;
+    width: 1000px;
+    margin-top: 80px;
+    font-size: 20px;
+    margin: auto;
+}
+
+/* table */
+
+#table-txt {
+    min-width: 250px;
+    width: 800px;
+    text-align: left;
+    line-height: 30px;
+    table-layout: fixed;
+}
+
+.big-title {
+    background-color: rosybrown;
+    font-size: 23px;
+    letter-spacing: 0.15em;
+    text-align: center;
+    line-height: 70px;
+    word-spacing: 0.8em;
+}
+
+.main-title {
+    background-color: rgb(85, 75, 113);
+    font-size: 22px;
+    color: whitesmoke;
+    letter-spacing: 0.15em;
+    text-align: center;
+    line-height: 50px;
+    word-spacing: 0.7em;
+}
+
+/* scrollbar, scrollbox */
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(255, 179, 179);
+    background: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(161, 137, 223);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(75, 65, 101);
+}
+
+.scroll-box {
+    overflow-y: scroll;
+    line-height: 10em;
+    height: 450px;
+}
+
+/* download link */
+
+#download{
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 0.1em;
+    padding: 20px;
+    width: 300px;
+    background-color: rgb(13, 53, 123);
+    border-radius: 20px;
+    margin: 50px auto;
+}
+
+#download a{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(242, 175, 202);
+}
+
+#download:hover{
+    background-color: rgb(52, 98, 177);
+}
+
+/* table - Videos */
+
+.songs {
+    line-height: 3em;
+    font-weight: bold;
+    height: 650px;
+}
+
+/* table - last name */
+
+.last-name {
+    border-collapse: separate;
+    display: block;
+}
+
+.last-name-row {
+    text-align: center;
+    float: left; 
+    display: block;
+}
+
+.kr-last-name {
+    background-color: rgba(129, 143, 223, 0.2);
+    font-size: 50px;
+    border-radius: 20px 0 0 20px;
+    padding: 0 30px;
+    
+}
+
+.en-last-name {
+    background-color: rgba(129, 143, 223, 0.5);
+    font-size: 45px;
+    border-radius: 0 20px 20px 0;
+    padding: 0 15px;
+    width: 100px;
+}
+
+.kr-last-name:hover {
+    background-color: rgba(129, 143, 223, 0.5);
+    font-size: 72px;
+}
+
+/* table - first name */
+
+.first-name-row {
+    float: left; 
+    display: block;
+    width: 220px;
+    height: 230px;
+    border-radius: 20px;
+    background-size: cover;
+}
+
+.kr-first-name {
+    color: transparent;
+    padding: 0 30px;
+    width: 220px;
+    height: 230px;
+}
+
+.kr-first-name:hover {
+    background-color: rgba(129, 143, 223, 1);
+    border-radius: 20px;
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    color: black;
+}
+
+/* FORM */
+
+.labelForm {
+    background-color: rgb(64, 56, 87);
+    font-size: 22px;
+    color: whitesmoke;
+    letter-spacing: 0.15em;
+    text-align: center;
+    line-height: 68px;
+    padding: 15px; 
+    border-radius: 3px;  
+}
+
+.inputForm {
+    background-color: #c6d5e9ea;
+    line-height: 38px;
+    font-size: 30px;
+    border-radius: 5px;
+}
+
+#submitName {
+    background-color: rgb(85, 75, 113);
+    font-size: 30px;
+    color: whitesmoke;
+    letter-spacing: 0.15em;
+    text-align: center;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.makeName:hover, #submitName:hover {
+    background-color: rgb(161, 137, 223);
+}
+
+#thanks, #result {
+    font-weight: bold;
+    font-size: 25px;
+    color: rgb(64, 56, 87);
+    letter-spacing: 0.15em;
+    text-align: center;
+    line-height: 45px;
+}
+
+.makeName {
+    background-color: black;
+    font-size: 30px;
+    color: whitesmoke;
+    letter-spacing: 0.15em;
+    text-align: center;
+    border-radius: 10px;
+    padding: 15px;
+    width: 300px;
+    margin: 10px auto;
+}
+
+.resultName {
+    font-size: 27px;
+    font-weight: bold;
+    color: rgb(48, 27, 122);
+    letter-spacing: 0.1em;
+    line-height: 40px;
+    word-spacing: 0.2em;
+}
+
+/* footer */
+
+footer ul {
+    color: #ffffff;
+    background-color: rgb(46, 21, 31);
+    margin-left: -9px;
+    width: 100%;
+    overflow: hidden;
+    list-style-type: none;
+}
+
+footer ul li {
+    display: block;
+    padding: 2px auto;
+    text-align: center;
+    font-size: 17px;
+    word-spacing: 0.3em;
+    letter-spacing: 0.09em;
+    line-height: 25px;
+}
