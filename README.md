@@ -1,4 +1,4 @@
-# Make Your Korean Name
+# <a href="https://positive235.github.io/make-kr-name/index.html" target="_blank">Make Your Korean Name</a>
 
 **CS 290 Web Development Course Project**
 
