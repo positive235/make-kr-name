@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!-- if using Korean, use "ko" instead of "en" -->
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HOME | Make Your Korean Name</title>
+    <link rel= "stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="dropdown">
+        <button class="dropbtn">MENU</button>
+        <div class="dropdown-menu">
+            <ul>
+                <li><a id="active" href="index.html">HOME</a></li>
+                <li><a href="make-name.html">MAKE KR NAME</a></li>
+                <li><a href="pick-name.html">PICK KR NAME</a></li>
+                <li><a href="resources.html">RESOURCES</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <main>
+        <!-- picture carousel animation with description of pictures 
+             Credits: [W3 Schools] (https://www.w3schools.com/w3css/w3css_slideshow.asp) -->
+
+        <!-- <div id="topPic"></div> -->
+
+        <div class="carouselAnimation">   
+            <img class="pictures" src="img/bts.jpg" alt="BTS" width="600" height="378">
+            <div class="caption">BTS</div>
+            <div class="citation">https://www.ecopetit.cat/ecvi/JoToT_bts-map-of-the-soul-bts-wallpaper-for/</div>
+            <img class="pictures" src="img/hanbok-kstar1.jpg" alt="K-star with hanbok" width="600" height="378">
+            <div class="caption">Lee Young Ae (Actress)</div>
+            <div class="citation">https://blog.naver.com/it_lady/100204151819</div>
+            <img class="pictures" src="img/hanbok-kstars2.jpg" alt="K-stars with hanbok" width="600" height="378">
+            <div class="caption">Park Bo-gum and Kim Yoo-jung</div>
+            <div class="citation">http://blogfiles.naver.net/20160817_100/qkrtmddn10_1471437260075SsYlv_JPEG/%B1%B8%B8%A3%B9%CC%B1%D7%B8%B0%B4%DE%BA%FB.jpg</div>
+        </div>
+
+        <div id="buttonPic">
+            <!-- <span class="previous" onclick="preIdx()"> &lt; </span>
+            <span class="next" onclick="nextIdx()"> &gt; </span> -->
+            <button class="curPic firstbutton" onclick= "curIdx(0)"></button>
+            <button class="curPic middlebutton" onclick= "curIdx(1)"></button>
+            <button class="curPic lastbutton" onclick= "curIdx(2)"></button>
+        </div>
+
+        <!-- table with introduction of menus -->
+        <table id="table-txt">
+            <tr class="main-title">
+                <th>MAKE KR NAME</th>
+            </tr>
+            <tr>
+                <td><ul><li>Make your own Korean First Name</li></ul></td>
+            </tr>
+            <tr class="main-title">
+                <th>PICK KR NAME</th>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li>Pick your Korean last name from the lists</li>
+                        <li>Pick your Korean first name from popular K-POP stars</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr class="main-title">
+                <th>RESOURCES</th>
+            </tr>
+                <td>
+                    <ul>
+                        <li>Korean (Hangeul) Guide PDF File</li>
+                        <li>About Hangeul</li>
+                        <li>Useful Links for Learning Korean</li>
+                        <li>Best K-POP songs to learn Korean</li>
+                    </ul>
+                </td>
+        </table>
+    </main>
+    <footer>
+        <ul>  
+            <li></li>
+            <li>&copy;Copyright 2020 Hae-Ji Park</li>
+            <li>Email: parkhaej@oregonstate.edu</li>
+            <li>Github: github.com/positive235</li>   
+        </ul>
+    </footer>
+    <script src="script.js"></script> 
+</body>
+</html>
