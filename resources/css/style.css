@@ -4,21 +4,27 @@ html {
 }
 
 /* Horizontal Menu */
+#for-vertical-menu {
+    display: none;
+}
 
-nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
+#menu {
     width: 100%;
-    list-style-type: none;
     background-color: rgb(46, 21, 31);
     position: fixed;
     z-index: 10;
-    padding: 18px 0;
+    padding: 0;
     margin-top: -8px;
 }
+
+.menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    float: left;
+}
   
-nav ul li a {
+.menu-list a {
     color: #ffffff;
     text-align: center;
     padding: 18px 50px;
@@ -27,7 +33,7 @@ nav ul li a {
     letter-spacing: 0.2em;
 }
   
-nav ul li a:hover {
+.menu-list a:hover {
     background-color: rgb(156, 77, 109);
     text-decoration: none;
 }
@@ -375,7 +381,9 @@ a:active {
 }
 
 @media screen and (max-width: 1130px) {
-    nav ul li a {
+    
+
+    .menu-list a {
         color: #ffffff;
         text-align: center;
         padding: 18px 20px;
@@ -407,7 +415,281 @@ a:active {
         color: rgb(31, 13, 21);
         letter-spacing: 0.15em;
         word-spacing: 0.3em;
-    }
-    
+    }    
 }
 
+@media screen and (max-width: 825px) {
+    
+
+    .first-name-row {
+        margin: 3px;
+        max-width: 207px;
+    }
+
+    .last-name-row {
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    /* menu collapse start */
+    nav {
+        margin-top: -8px;
+    }
+
+    #for-vertical-menu {
+        display: block;
+        position: fixed;
+        width: 100%;
+        text-align: center;
+        font-size: 25px;
+        letter-spacing: 0.2em;
+        background-color: rgb(46, 21, 31);
+        color: #ffffff;
+        padding: 18px 10px;
+    }
+
+    #for-vertical-menu:hover {
+        background-color: rgb(156, 77, 109);
+    }
+
+    #menu {
+        display: none;
+        width: 100%;
+        margin: auto;
+    }
+
+    .menu-list {
+        width: 100%;
+    }
+
+    .menu-list a {
+        display: block;
+        width: 100%;
+    }
+    
+    .resource-table {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        width: 100%;
+        max-width: 690px;
+    }
+
+    .resource-title {
+        width: 100%;
+        font-size: 20px;
+        word-spacing: normal;
+        line-height: normal;
+    }
+
+    .resource-txt {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #menu {
+        width: 100%;
+    }
+
+    .menu-intro-board {
+        max-width: 300px;
+        margin-left: -30px;
+        font-size: 16px;
+    }
+
+    .menu-intro-name {
+        border-radius: 10px 10px 0 0;
+        background-color: rgb(167, 153, 207);
+        color: whitesmoke;
+        padding: 10px;
+        font-size: 20px;
+        letter-spacing: normal;
+        line-height: 30px;
+        word-spacing: normal;
+    }
+    
+    .menu-intro-description {
+        color: rgb(31,13,21);
+        line-height: normal;
+        font-size: 16px;
+        padding: 50px 30px 10px 30px;
+        letter-spacing: normal;
+        word-spacing: normal;
+    }
+    
+    .result-title {
+        display: none;
+    }
+
+    .result-names {
+        background-color:transparent;
+        padding: 50px 10px;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: normal;
+        word-spacing: normal;
+        letter-spacing: normal;
+        width: 90%;
+
+    }
+    
+    .result-name {
+        padding: 10px;
+        background-color: transparent;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 16px;
+        width: 100%;
+        
+    }
+    
+    .result-description {
+        background-color: rgba(207, 153, 195, 0.303);
+        border-radius: 10px;
+        color: rgb(46, 21, 31);
+        padding: 10px;
+        margin: 10px auto;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: normal;
+        line-height: normal;
+        word-spacing: normal;
+        text-align: center;
+        width: 75%;
+    }
+
+    .first-name-row {
+        margin: 2px;
+        max-width: 280px;
+    }
+
+    .last-name-row {
+        margin-left: 0;
+    }
+
+    .big-title {
+        font-size: 20px;
+        letter-spacing: 0.15em;
+        text-align: center;
+        line-height: 30px;
+        word-spacing: normal;
+    }
+
+    iframe {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #menu {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    #for-vertical-menu {
+        display: block;
+        position: fixed;
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+        letter-spacing: 0.2em;
+        background-color: rgb(46, 21, 31);
+        color: #ffffff;
+        padding: 18px 10px;
+    }
+
+    .menu-intro-board {
+        width: 100%;
+        margin-left: -50px;
+        font-size: 15px;
+    }
+
+    .menu-intro-name {
+        border-radius: 10px 10px 0 0;
+        background-color: rgb(167, 153, 207);
+        color: whitesmoke;
+        padding: 10px;
+        font-size: 16px;
+        letter-spacing: normal;
+        line-height: normal;
+        word-spacing: normal;
+    }
+    
+    .menu-intro-description {
+        color: rgb(31,13,21);
+        line-height: normal;
+        font-size: 16px;
+        padding: 30px 30px 0px 30px;
+        letter-spacing: normal;
+        word-spacing: normal;
+    }
+
+    .result-description {
+        background-color: rgba(207, 153, 195, 0.303);
+        border-radius: 10px;
+        color: rgb(46, 21, 31);
+        padding: 10px;
+        margin: 10px auto;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        max-width: 280px;
+    }
+
+    #download{
+        text-align: center;
+        font-size: 16px;
+        letter-spacing: 0.1em;
+        padding: 20px;
+        max-width: 250px;
+        background-color: rgb(13, 53, 123);
+        border-radius: 20px;
+        margin: 50px auto;
+    }
+
+    .songs {
+        line-height: 2em;
+        font-size: 13px;
+        font-weight: bold;
+        height: auto;
+        text-align: left;
+    }
+
+    .songs ul {
+        list-style: circle;
+    }
+
+    .caption {
+        font-size: 10px;
+        color: grey;
+    }
+
+    .big-title {
+        font-size: 16px;
+        letter-spacing: 0.15em;
+        text-align: center;
+        line-height: 30px;
+        word-spacing: normal;
+    }
+
+
+    /* resources.html's reference */
+    .reference {
+        display: none;
+    }
+
+    /* footer */
+
+    footer ul li {
+        font-size: 12px;
+        word-spacing: normal;
+        letter-spacing: normal;
+        line-height: normal;
+    }
+}

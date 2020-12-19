@@ -9,22 +9,23 @@
 </head>
 <body>
     <nav>
-        <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="make-name.html">MAKE KR NAME</a></li>
-            <li><a href="pick-name.html">PICK KR NAME</a></li>
-            <li><a id="active" href="resources.html">RESOURCES</a></li>
-          </ul>
-    </nav>
+        <div id="for-vertical-menu" onclick="menuDisplay()">MENU</div>
+        <div id="menu">
+          <div class="menu-list"><a href="index.html">HOME</a></li>
+          <div class="menu-list"><a href="make-name.html">MAKE KR NAME</a></li>
+          <div class="menu-list"><a href="pick-name.html">PICK KR NAME</a></li>
+          <div class="menu-list"><a id="active" href="resources.html">RESOURCES</a></li>
+        </div>
+      </nav>
     
     <main>
         
         <!-- table with unordered list of online resources with links -->
-        <table id="table-txt">
-            <tr class="main-title">
-                <th>KOREAN (HANGEUL) GUIDE PDF FILE</th>
+        <table id="table-txt" class="resource-table">
+            <tr class="main-title resource-title">
+                <th>HANGEUL GUIDE PDF FILE</th>
             </tr>
-            <tr>
+            <tr class="resource-txt">
                 <td>
                     
                     <!-- Download button : Download PDF File -->
@@ -34,10 +35,10 @@
                     <ul><li>Reference: <a href="https://www.cakec.com/teachingnlearning" target="_blank">[Korean Education Centre In Canada]</a></li></ul>
                 </td>
             </tr>
-            <tr class="main-title">
+            <tr class="main-title resource-title">
                 <th>ABOUT HANGEUL</th>
             </tr>
-            <tr>
+            <tr class="resource-txt">
                 <td>
                     <ul>
                         <li><strong>Who Created Hangeul?</strong></li>
@@ -57,10 +58,10 @@
                 </td>
             </tr>
             
-            <tr class="main-title">
+            <tr class="main-title resource-title">
                 <th>USEFUL LINKS FOR LEARNING KR</th>
             </tr>
-            <tr>
+            <tr class="resource-txt">
                 <td>
                     <ul>
                         <li><a href="http://www.howtostudykorean.com/" target="_blank">How to Study Korean</a></li>
@@ -73,24 +74,24 @@
                     </ul>
                 </td>
             </tr>
-            <tr class="main-title">
+            <tr class="main-title resource-title">
                 <th>LEARN KR WITH K-POP SONGS</th>
             </tr>
-            <tr>
+            <tr class="resource-txt">
                 <td>
                     <div class="scroll-box songs">
                     <ul>
-                        <li>[MV] IU - EIGHT (Prod. & Feat. SUGA of BTS)<br>
+                        <li><a href="https://www.youtube.com/embed/TgOu00Mf3kI">[MV] IU - EIGHT (Prod. & Feat. SUGA of BTS)</a><br>
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/TgOu00Mf3kI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
-                        <li>LEARN KOREAN WITH IU-EIGHT LYRICS<br>
+                        <li><a href="https://www.youtube.com/embed/uKtrlBA-fyU">LEARN KOREAN WITH IU-EIGHT LYRICS</a><br>
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/uKtrlBA-fyU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
-                        <li>[MV] BTS - SPRING DAY<br>
+                        <li><a href="https://www.youtube.com/embed/xEeFrLSkMm8">[MV] BTS - SPRING DAY</a><br>
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/xEeFrLSkMm8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
-                        <li>LEARN KOREAN with BTS - SPRING DAY<br>
+                        <li><a href="https://www.youtube.com/embed/rHT4FNzeXp4">LEARN KOREAN with BTS - SPRING DAY</a><br>
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/rHT4FNzeXp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
-                        <li>[MV] BLACKPINK - KILL THIS LOVE<br>
+                        <li><a href="https://www.youtube.com/embed/2S24-y0Ij3Y">[MV] BLACKPINK - KILL THIS LOVE</a><br>
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/2S24-y0Ij3Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
-                        <li>LEARN KOREAN WITH BLACKPINK - KILL THIS LOVE<br>
+                        <li><a href="https://www.youtube.com/embed/cSJAO-snRkk">LEARN KOREAN WITH BLACKPINK - KILL THIS LOVE</a><br>
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/cSJAO-snRkk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
                     </ul>
                     </div>
@@ -109,5 +110,6 @@
             <li>Github: github.com/positive235</li>   
         </ul>
     </footer> 
+    <script src="resources/js/script.js"></script>
 </body>
 </html>

@@ -8,13 +8,14 @@
 </head>
 <body>
     <nav>
-        <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="make-name.html">MAKE KR NAME</a></li>
-            <li><a id="active" href="pick-name.html">PICK KR NAME</a></li>
-            <li><a href="resources.html">RESOURCES</a></li>
-          </ul>
-    </nav>
+        <div id="for-vertical-menu" onclick="menuDisplay()">MENU</div>
+        <div id="menu">
+          <div class="menu-list"><a href="index.html">HOME</a></li>
+          <div class="menu-list"><a href="make-name.html">MAKE KR NAME</a></li>
+          <div class="menu-list"><a id="active" href="pick-name.html">PICK KR NAME</a></li>
+          <div class="menu-list"><a href="resources.html">RESOURCES</a></li>
+        </div>
+      </nav>
     
     <main>
         <!-- Scroll boxes: the list of Korean first names and last names -->
@@ -197,7 +198,7 @@
                 </td>
             </tr>
     
-            <tr>
+            <tr class="reference"> 
                 <td style="font-size:7px; color:grey;">
                     <br><br><br><br><br>
                 <a href="https://blog.naver.com/dltpdud03/221927039058">Reference 1(IU)</a>  / 
@@ -225,6 +226,7 @@
             <li>Email: parkhaej@oregonstate.edu</li>
             <li>Github: github.com/positive235</li>   
         </ul>
-    </footer> 
+    </footer>
+    <script src="resources/js/script.js"></script> 
 </body>
 </html>
