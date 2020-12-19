@@ -50,10 +50,10 @@ main {
 }
 
 /* Picture Carousel Animation */
+
 .carousel-padding {
     width: 100%;
-    padding-bottom: 15px;
-    background-color: rgb(167, 153, 207);
+    margin:0;
 }
 
 .pictures {
@@ -71,37 +71,7 @@ main {
     align-items: baseline;
     text-align: center;
     width: 100%;
-}
-
-.previous, .next, .curPic {
-    cursor: pointer;
-}
-
-.curPic {
-    height: 10px;
-    width: 10px;
-    padding: 10px;
-    border-radius: 10px;
-    border-color: white;
-    margin-right: 10px;
-}
-
-.curPic:hover {
-    background-color: rgb(46, 21, 31);
-}
-
-#buttonPic {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.previous, .next {
-    opacity: 0.7;
-}
-
-.previous:hover, .next:hover {
-    opacity: 1;
+    margin-top:-30px;
 }
 
 /* Descriptions of Menu */
@@ -117,15 +87,17 @@ main {
 }
 
 .menu-intro-board {
+    border-radius: 10px;
     width: 30%;
     height: 90%;
-    background-color: rgb(31, 13, 21);
-    color: whitesmoke;
+    background-color: thistle;
     padding-bottom: 100px;
 }
 
 .menu-intro-name {
+    border-radius: 10px 10px 0 0;
     background-color: rgb(167, 153, 207);
+    color: whitesmoke;
     font-size: 23px;
     letter-spacing: 0.15em;
     line-height: 70px;
@@ -133,6 +105,7 @@ main {
 }
 
 .menu-intro-description {
+    color: rgb(31,13,21);
     line-height: 30px;
     font-size: 20px;
     padding: 50px 30px 10px 30px;
@@ -400,7 +373,7 @@ a:active {
 
 .menu-intro-board a:visited {
     text-decoration: none;
-    color: whitesmoke;
+    color: rgb(31, 13, 21);
 }
 
 @media screen and (max-width: 1130px) {
@@ -424,9 +397,8 @@ a:active {
     .menu-intro-board {
         width: 80%;
         height: 15%;
-        margin-top: 50px;
-        background-color: rgb(31, 13, 21);
-        color: whitesmoke;
+        margin-top: 35px;
+        background-color: thistle;
         padding-top: -10px;
     }
 
@@ -434,6 +406,7 @@ a:active {
         line-height: 30px;
         font-size: 20px;
         padding-top: 20px;
+        color: rgb(31, 13, 21);
         letter-spacing: 0.15em;
         word-spacing: 0.3em;
     }
