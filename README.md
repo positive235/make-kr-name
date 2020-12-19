@@ -2,4 +2,4 @@
 
 **CS 290 Web Development Course Project**
 
-A website to make user's Korean name or pick one from the lists and get resources to learn Korean
+A website to create user's Korean name, or pick one from the Korean name lists and provide learning Korean materials
