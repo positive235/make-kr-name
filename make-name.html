@@ -17,73 +17,27 @@
     </nav>
     
     <main>
-        <table id="table-txt">
-            <!-- Make your Korean Name -->
-            <tr class="main-title">
-                <th>KR FIRST NAME - FEMALE</th>
-            <tr>
-            <tr>
-                <td>
-                    <div class="makeName" id="makeFirstFemale">CLICK!</div>
-                </td>
-            </tr>
-
-            <tr class="main-title">
-                <th>KR FIRST NAME - MALE</th>
-            <tr>
-            <tr>
-                <td>
-                    <div class="makeName" id="makeFirstMale">CLICK!</div>
-                </td>
-            </tr>
-
-            <tr class="main-title">
-                <th>KR LAST NAME</th>
-            </tr>
-            <tr>
-                <td>
-                    <div class="makeName" id="makeLast">CLICK!</div>
-                </td>
-            </tr>
-
-            <tr class="main-title">
-                <th>RESULT - YOUR NAME</th>
-            <tr>
-            <tr>
-                <td>
-                    <ul class="resultName">
-                        <li>Your KR First Name (Female) ? <span id="firstNameFemale"></span></li>
-                        <li>Your KR First Name (Male) ? <span id="firstNameMale"></span></li>
-                        <li>Your KR Last Name ? <span id="lastNameResult"></span></li>
-                    </ul>
-                </td>
-            </tr>
-             <!-- form : user's result & submit the result -->
-            <tr class="main-title">
-                <th>SHARE YOUR RESULT HERE</th>
-            </tr>
-            <tr>
-                <td style="text-align: center;">
-                    <form>
-                        <br><label for="firstName" class="labelForm">KR FIRST NAME</label>
-                        &nbsp;&nbsp;<input type="text" class="inputForm" id="firstName" name="firstName">
-                        <br>
-                        <label for="lastName" class="labelForm">KR LAST NAME </label>
-                        &nbsp;&nbsp;&nbsp;<input type="text" class="inputForm" id="lastName" name="lastName">
-                        <br><br><br>
-                        <input type="submit" id="submitName" value="SUBMIT">
-                        <br><br>
-                    </form>
-                    <div>
-                        <br>
-                        <span id="thanks"></span>
-                        <br>
-                        <span id="result"></span>
-                        <br><br><br>
-                    </div>
-                </td>
-            </tr>
-        </table>
+        <!-- Make your Korean Name -->
+        <div class="make-name-section">
+            <div class="result-title">YOUR KOREAN NAME</div>
+            <div class="result-names">
+                <div class="result-name">
+                    Your KR First Name (Female) ? <br>
+                    <span id="firstNameFemale"></span>
+                </div>
+                <div class="result-name">
+                    Your KR First Name (Male) ? <br>
+                    <span id="firstNameMale"></span>
+                </div>
+                <div class="result-name">
+                    Your KR Last Name ? <br>
+                    <span id="lastNameResult"></span>
+                </div>
+                <div class="result-description">
+                    <span id="KoreanNameResult"></span>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>
@@ -94,7 +48,7 @@
             <li>Github: github.com/positive235</li>   
         </ul>
     </footer>
-    <script src="resources/js/form.js"></script>
+    <!-- <script src="resources/js/form.js"></script> -->
     <script src="resources/js/makeName.js"></script> 
 </body>
 </html>
