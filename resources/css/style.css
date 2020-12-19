@@ -1,46 +1,27 @@
-body {
-    background-color: rgb(254, 228, 254);
-    min-width: 900px;
-    min-height: 800px;
-}
-
-/* links */
-
-a:link {
-    text-decoration: none;
-}
-
-a:visited {
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-a:active {
-    text-decoration: underline;
+html {
+    margin: 0;
+    background-color: rgb(254, 228, 254); 
 }
 
 /* Horizontal Menu */
 
 nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
     width: 100%;
-    overflow: hidden;
     list-style-type: none;
-    margin-top: -9px;
-    left: 0;
     background-color: rgb(46, 21, 31);
     position: fixed;
     z-index: 10;
+    padding: 18px 0;
+    margin-top: -8px;
 }
   
 nav ul li a {
-    float: left;
-    display: block;
     color: #ffffff;
     text-align: center;
-    padding: 18px 40px;
+    padding: 18px 50px;
     text-decoration: none;
     font-size: 25px;
     letter-spacing: 0.2em;
@@ -55,26 +36,41 @@ nav ul li a:hover {
     background-color: rgb(207, 153, 195);
 }
 
+/* main */
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    left: -3px;
+    font-size: 20px;
+    padding-top: 60px;
+}
+
 /* Picture Carousel Animation */
+.carousel-padding {
+    width: 100%;
+    padding-bottom: 20px;
+    background-color: rgb(167, 153, 207);
+}
 
 .pictures {
-    display:none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 70%;
 }
 
 .caption {
     color: whitesmoke;
     font-weight: bold;
-    display: none;
-    margin-top: -50px;
-    margin-left: 10px;
-}
-
-.citation {
-    color: white;
-    display: none;
-    font-size: 8px;
-    margin-bottom: 30px;
-    margin-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    text-align: center;
+    width: 100%;
 }
 
 .previous, .next, .curPic {
@@ -94,33 +90,10 @@ nav ul li a:hover {
     background-color: rgb(46, 21, 31);
 }
 
-.firstbutton {
-    margin-left: 300px;
-}
-
-#topPic {
-    background-color: rgb(167, 153, 207);
-    border-radius: 20px 20px 0 0;
-    width: 800px;
-    padding: 25px 0;
-}
-
 #buttonPic {
-    background-color: rgb(167, 153, 207);
-    border-radius: 0 0 20px 20px;
-    width: 800px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-top: -13px;
-    margin-bottom: 20px;
-}
-
-.previous {
-    margin-left: 10px;
-}
-
-.next {
-    margin-left: 260px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .previous, .next {
@@ -131,24 +104,52 @@ nav ul li a:hover {
     opacity: 1;
 }
 
-/* main */
+/* Descriptions of Menu */
 
-main {
-    padding: 200px;
-    width: 1000px;
-    margin-top: 80px;
+.menu-intro {
+    padding: 300px 0;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.menu-intro-board {
+    width: 30%;
+    height: 80%;
+    background-color: rgb(31, 13, 21);
+    color: whitesmoke;
+    padding-bottom: 100px;
+}
+
+.menu-intro-name {
+    background-color: rgb(85, 75, 113);
+    font-size: 23px;
+    letter-spacing: 0.15em;
+    line-height: 70px;
+    word-spacing: 0.8em;
+}
+
+.menu-intro-description {
+    line-height: 50px;
     font-size: 20px;
-    margin: auto;
+    padding: 50px 30px 10px 30px;
+    letter-spacing: 0.15em;
+    word-spacing: 0.3em;
+}
+
+.menu-intro-board:hover {
+    opacity: 0.7;
 }
 
 /* table */
 
 #table-txt {
-    min-width: 250px;
-    width: 800px;
-    text-align: left;
+    width: 100%;
     line-height: 30px;
-    table-layout: fixed;
+    
 }
 
 .big-title {
@@ -162,12 +163,11 @@ main {
 
 .main-title {
     background-color: rgb(85, 75, 113);
-    font-size: 22px;
+    font-size: 23px;
     color: whitesmoke;
     letter-spacing: 0.15em;
-    text-align: center;
-    line-height: 50px;
-    word-spacing: 0.7em;
+    line-height: 70px;
+    word-spacing: 0.8em;
 }
 
 /* scrollbar, scrollbox */
@@ -353,16 +353,18 @@ main {
 }
 
 /* footer */
-footer ul {
+
+footer {
+    width: 100%;
     color: #ffffff;
     background-color: rgb(46, 21, 31);
-    margin-left: -9px;
-    width: 100%;
-    overflow: hidden;
-    list-style-type: none;
+    margin-left: -10px;
+    padding-right: 30px;
+    margin-bottom: -15px;
 }
 
 footer ul li {
+    list-style-type: none;
     display: block;
     padding: 2px auto;
     text-align: center;
@@ -371,3 +373,37 @@ footer ul li {
     letter-spacing: 0.09em;
     line-height: 25px;
 }
+
+/* links */
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+/* menu-intro-board link in index.html*/
+
+.menu-intro-board a:link {
+    text-decoration: none;
+}
+
+.menu-intro-board a:visited {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+@media screen and (max-width: 1130px) {
+    
+}
+

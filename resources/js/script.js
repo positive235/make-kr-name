@@ -5,7 +5,6 @@
 
 const pics = document.getElementsByClassName("pictures");
 const cap = document.getElementsByClassName("caption");
-const cit = document.getElementsByClassName("citation"); 
 
 var picIdx = 0;
 carouselAni();
@@ -21,12 +20,10 @@ function carouselAni() {
     for (let i = 0; i < pics.length; i++){
         pics[i].style.display = "none";
         cap[i].style.display = "none";
-        cit[i].style.display = "none";
     }
    
     pics[picIdx].style.display = "block";
     cap[picIdx].style.display = "block";
-    cit[picIdx].style.display = "block";
 
     picIdx++;
 
