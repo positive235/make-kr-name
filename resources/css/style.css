@@ -119,15 +119,6 @@ main {
 
 /* Make your Korean Name */
 
-.resultName {
-    font-size: 27px;
-    font-weight: bold;
-    color: rgb(48, 27, 122);
-    letter-spacing: 0.1em;
-    line-height: 40px;
-    word-spacing: 0.2em;
-}
-
 .make-name-section {
     margin-top: 50px;
 }
