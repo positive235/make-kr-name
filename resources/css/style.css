@@ -1,5 +1,8 @@
-html {
+* {
     margin: 0;
+}
+
+html {
     background-color: rgb(254, 228, 254);
 }
 
@@ -160,7 +163,7 @@ main {
     border-radius: 10px;
     text-align: center;
     max-width: 500px;
-    min-width: 500px;
+    /* min-width: 500px; */
 }
 
 .result-description {
@@ -335,15 +338,13 @@ footer {
     width: 100%;
     color: #ffffff;
     background-color: rgb(46, 21, 31);
-    margin-left: -10px;
-    padding-right: 30px;
     margin-bottom: -15px;
 }
 
 footer ul li {
     list-style-type: none;
     display: block;
-    padding: 2px auto;
+    padding: 2px 0px;
     text-align: center;
     font-size: 17px;
     word-spacing: 0.3em;
@@ -380,16 +381,28 @@ a:active {
     color: rgb(31, 13, 21);
 }
 
+/* reference */
+
+.reference {
+    display: none;
+}
+
+/* to make this responsive */
+
 @media screen and (max-width: 1130px) {
     
-
+    /* menu font size and padding change */
     .menu-list a {
         color: #ffffff;
         text-align: center;
         padding: 18px 20px;
+        font-size: 16px;
         text-decoration: none;
-        font-size: 18px;
         letter-spacing: 0.2em;
+    }
+
+    main {
+        padding-top: 47px;
     }
 
     .menu-intro {
@@ -415,7 +428,12 @@ a:active {
         color: rgb(31, 13, 21);
         letter-spacing: 0.15em;
         word-spacing: 0.3em;
-    }    
+    } 
+    
+    footer ul li {
+        font-size: 15px;
+    }
+    
 }
 
 @media screen and (max-width: 825px) {
@@ -442,11 +460,12 @@ a:active {
         position: fixed;
         width: 100%;
         text-align: center;
-        font-size: 25px;
+        font-size: 16px;
         letter-spacing: 0.2em;
         background-color: rgb(46, 21, 31);
         color: #ffffff;
-        padding: 18px 10px;
+        padding: 18px 0px;
+        z-index: 10;
     }
 
     #for-vertical-menu:hover {
@@ -466,33 +485,78 @@ a:active {
     .menu-list a {
         display: block;
         width: 100%;
+        padding: 18px 0px;
     }
     
-    .resource-table {
-        display: flex;
-        flex-wrap: wrap;
-        margin: auto;
-        width: 100%;
-        max-width: 690px;
+    main {
+        padding-top: 55px;
     }
 
     .resource-title {
-        width: 100%;
         font-size: 20px;
         word-spacing: normal;
-        line-height: normal;
+        width: 100%;
     }
 
     .resource-txt {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
         font-size: 16px;
+    }
+    
+    footer ul {
+        padding: 0px;
+    }
+
+    footer ul li {
+        padding: 2px 0;
+        line-height: normal;
+    }
+    
+}
+
+@media screen and (max-width: 645px) {
+    .songs {
+        text-align: left;
+    }
+
+    .songs ul {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 605px) {
+    iframe {
+        display: none;
+    }
+
+    .songs {
+        height: 100%;
+        text-align: left;
+    }
+
+    .songs ul {
+        padding-left: 40px;
+    }
+
+    .songs ul li {
+        list-style: decimal;
     }
 }
 
 @media screen and (max-width: 425px) {
+    nav {
+        width: 100%;
+    }
+
+    #for-vertical-menu {
+        width: 100%;
+        font-size: 16px;
+    }
+    
     #menu {
+        width: 100%;
+    }
+
+    .menu-list {
         width: 100%;
     }
 
@@ -528,25 +592,25 @@ a:active {
 
     .result-names {
         background-color:transparent;
-        padding: 50px 10px;
+        padding: 50px 0px;
         font-size: 20px;
         font-weight: bold;
         line-height: normal;
         word-spacing: normal;
         letter-spacing: normal;
-        width: 90%;
+        width: 100%;
 
     }
     
     .result-name {
-        padding: 10px;
+        padding: 10px 0px;
         background-color: transparent;
         margin-bottom: 20px;
         border-radius: 10px;
         text-align: center;
         font-size: 16px;
         width: 100%;
-        
+        min-width: 250px;
     }
     
     .result-description {
@@ -581,27 +645,36 @@ a:active {
         word-spacing: normal;
     }
 
-    iframe {
-        display: none;
+    footer ul li {
+        font-size: 13px;
+        line-height: normal;
+    }
+
+    .resource-title {
+        font-size: 18px;
+        word-spacing: normal;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .resource-title {
+        letter-spacing: normal;
+    }
+
+    .songs {
+        font-size: 15px;
+        line-height: normal;
+    }
+
+    .songs li {
+        margin: 10px 0;
     }
 }
 
 @media screen and (max-width: 320px) {
     #menu {
-        width: 100%;
-        font-size: 16px;
-    }
-
-    #for-vertical-menu {
-        display: block;
-        position: fixed;
-        width: 100%;
-        text-align: center;
-        font-size: 16px;
-        letter-spacing: 0.2em;
-        background-color: rgb(46, 21, 31);
-        color: #ffffff;
-        padding: 18px 10px;
+        font-size: 15px;
     }
 
     .menu-intro-board {
@@ -676,6 +749,10 @@ a:active {
         text-align: center;
         line-height: 30px;
         word-spacing: normal;
+    }
+
+    .resource-txt {
+        font-size: 13px;
     }
 
 
